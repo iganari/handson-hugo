@@ -80,11 +80,11 @@ hugo server -D --bind="0.0.0.0"
 + clone
 
 ```
-git clone https://github.com/thingsym/hugo-theme-techdoc.git themes/techdoc
+git clone https://github.com/thingsym/hugo-theme-techdoc.git themes/hugo-theme-techdoc
 ```
 
 ```
-echo 'theme = "techdoc"' >> config.toml
+echo 'theme = "hugo-theme-techdoc"' >> config.toml
 ```
 
 
