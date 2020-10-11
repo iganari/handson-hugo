@@ -83,14 +83,18 @@ hugo server -D --bind="0.0.0.0"
 git clone https://github.com/thingsym/hugo-theme-techdoc.git themes/hugo-theme-techdoc
 ```
 
-```
-echo 'theme = "hugo-theme-techdoc"' >> config.toml
-```
-
++ サンプルサイトをコピーする
 
 ```
-hugo server --themesDir -D --bind="0.0.0.0"
+cp -r themes/hugo-theme-techdoc/exampleSite/* .
 ```
+
++ サンプルサイトの起動
+
+```
+hugo server -D --bind="0.0.0.0"
+```
+
 
 + ブラウザで確認
 
