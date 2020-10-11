@@ -2,7 +2,7 @@
 
 set -xeu
 
-_I_TAG='pkg-hugo'
+_I_TAG='ho-hugo'
 BASEPATH=$(cd `dirname $0`; pwd)
 DIREPATH=`echo $BASEPATH | awk -F\/ '{print $NF}'`
 
@@ -28,4 +28,5 @@ docker run -d \
     -h ${_I_TAG} \
     --name ${_I_TAG} \
     -p 8080:80 \
+    -p 1313:1313 \
     ${_I_TAG}
