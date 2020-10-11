@@ -15,4 +15,8 @@ RUN apk add nginx
 RUN mkdir /run/nginx && \
     chmod 0777 -R /run/nginx
 
+ADD nginx/nginx.conf /etc/nginx/nginx.conf
+ADD nginx/sites-enabled/service.conf /etc/nginx/sites-enabled/service.conf
+
+
 ENTRYPOINT nginx -g "daemon off;"
