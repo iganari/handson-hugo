@@ -57,8 +57,50 @@ hugo new posts/my-first-post.md
 + サーバ立ち上げ
 
 ```
-hugo server -D
+hugo server -D --bind="0.0.0.0"
 ```
+
++ nginx 経由で確認
+  + 0.0.0.0:8080
+
+--->  このままだと白い
+
++ 一旦止める
+
+```
+{Ctl + C}
+```
+
+## theme を入れてみる
+
++ Techdoc
+  + https://themes.gohugo.io/hugo-theme-techdoc/
+
+
++ clone
+
+```
+git clone https://github.com/thingsym/hugo-theme-techdoc.git themes/techdoc
+```
+
+```
+echo 'theme = "techdoc"' >> config.toml
+```
+
+
+```
+hugo server --themesDir -D --bind="0.0.0.0"
+```
+
++ ブラウザで確認
+
+![](./img/img-01.png)
+
+
+
+
+
+
 
 
 
